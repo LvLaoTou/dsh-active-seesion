@@ -49,6 +49,7 @@
     "lib/client.js",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "docs/screenshot.png"
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "name": "dsh-active-sessions",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "See which DSH sessions are running, waiting for you, or finished but unread — one sidebar entry above Plugins, with a day-range and an activity view.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sessions",
+    "sidebar",
+    "productivity"
+  ],
+  "license": "MIT",
+  "author": "LvLaoTou",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LvLaoTou/dsh-active-seesion.git"
+  },
+  "homepage": "https://github.com/LvLaoTou/dsh-active-seesion#readme",
+  "bugs": {
+    "url": "https://github.com/LvLaoTou/dsh-active-seesion/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1+": "compatible"
+      }
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ]
+}

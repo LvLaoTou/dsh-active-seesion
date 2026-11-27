@@ -1,6 +1,6 @@
 {
   "name": "dsh-active-sessions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "See which DSH sessions are running, waiting for you, or finished but unread — one sidebar entry above Plugins, with a day-range and an activity view.",
   "keywords": [
